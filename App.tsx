@@ -11,13 +11,9 @@
 import React from 'react';
 import {View, StatusBar, useColorScheme} from 'react-native';
 
-
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 import HomeScreen from './src/screens/Home';
-
-
-
-
+import Post from './src/components/post';
 
 
 const App = () => {
@@ -30,9 +26,8 @@ const App = () => {
   return (
     <View style={backgroundStyle}>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      
-        <HomeScreen/>
-      
+      <Post/>
+      <HomeScreen />
     </View>
   );
 };
