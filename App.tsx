@@ -16,6 +16,8 @@ import HomeScreen from './src/screens/Home';
 import Post from './src/components/post';
 import feed from './assets/data/feed';
 import SearchResultsScreen from './src/screens/SearchResults';
+import LoginScreen from './src/screens/LoginScreen';
+import DestinationSearch from './src/screens/DestinationSearch';
 
  const post1 = feed[0];
 
@@ -31,7 +33,9 @@ const App = () => {
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
       {/* <Post post= {post1}/> */}
       {/* <HomeScreen /> */}
-      <SearchResultsScreen/>
+      {/* <SearchResultsScreen/> */}
+      {/* <LoginScreen/> */}
+      <DestinationSearch/>
     </View>
   );
 };
